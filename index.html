@@ -93,25 +93,19 @@
             justify-content: space-between;
             align-items: center;
         }
-		
-        logo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-		}
-		
+
         .logo {
-           height: 50px;
-           width: auto;
-          object-fit: contain;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
         }
 
-      .site-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    white-space: nowrap;
-		}
+        .logo span { color: var(--secondary-color); }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
 
         nav a:hover { color: var(--secondary-color); }
 
@@ -478,12 +472,9 @@
 
     <!-- Header -->
     <header>
-        <div class="container header-content">
-            <div class="logo-wrapper">
-				 <img src="logo.jpg"alt="МаксиПласт-136" class="logo">
-				 <span class="site-title">МаксиПласт<span>-136</span>
-			</div>
-            <nav class="nav">
+        <div class="container header-wrap">
+            <div class="logo">МаксиПласт<span>-136</span></div>
+            <nav>
                 <ul>
                     <li><a href="#advantages">Преимущества</a></li>
                     <li><a href="#products">Продукция</a></li>
@@ -777,3 +768,4 @@
 
 </body>
 </html>
+    
