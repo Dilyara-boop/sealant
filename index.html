@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<img src="logo.png" alt="МаксиПласт" class="logo">МаксиПласт-136
     <title>МаксиПласт-136 | Герметик для дерева премиум класса</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -96,12 +95,20 @@
         }
 
         .logo {
-            height: 40px;
-            weight: auto;
-           vertical-align: middle;
-		   margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-color);
         }
-
+		
+.logo-icon {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+	
         .logo span { color: var(--secondary-color); }
 
         nav ul {
@@ -119,18 +126,14 @@
             font-size: 14px;
         }
 
-        /* Hero Section */
+         /* Hero Section */
         .hero {
-            style="background-image: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');"
+            background: linear-gradient(rgba(93, 64, 55, 0.8), rgba(93, 64, 55, 0.8)), url('https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1920');
             background-size: cover;
             background-position: center;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
         }
 
         .hero h1 {
@@ -479,7 +482,10 @@
     <!-- Header -->
     <header>
         <div class="container header-wrap">
-            <div class="logo">МаксиПласт<span>-136</span></div>
+            <div class="logo">
+				<img src="logo.png" alt="МаксиПласт" class="logo-icon">
+				МаксиПласт<span>-136</span>
+			</div>
             <nav>
                 <ul>
                     <li><a href="#advantages">Преимущества</a></li>
@@ -498,15 +504,10 @@
     </header>
 
     <!-- Hero Section -->
-	       <section class="relative bg-amber-900 text-white py-20 lg:py-32 overflow-hidden" style="background-image: linear-gradient(rgba(, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
-           <img src="images/bg.jpg" alt="Деревянный дом" width="800">
-			   <div class="container mx-auto px-4 text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-			Профессиональная герметизация<br>деревянных домов премиум класса
-			 </h1>
-             <p class="text-xl md:text-2xl mb-12 text-amber-100">
-             Акриловый герметик МаксиПласт-136, МаксиПласт-Sauna: защита на 30+ лет
-			 </p>
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональная герметизация<br>деревянных домов премиум класса</h1>
+            <p>Акриловый герметик МаксиПласт-136, МаксиПласт-Sauna: защита на 30+ лет</p>
             
             <div class="hero-features">
                 <div class="hero-feature-item">
@@ -779,4 +780,3 @@
 
 </body>
 </html>
-    
