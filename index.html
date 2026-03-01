@@ -121,7 +121,7 @@
         .hero {
             background-image:
 			linear-gradient(rgba(93, 64, 55, 0.8), rgba(93, 64, 55, 0.8)), 
-			url('images/wooden-house.jpg');
+			url('wooden-house.jpg');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -312,6 +312,18 @@
             position: relative;
             margin: 40px 0;
         }
+
+		   .company-logo {
+           display: flex;
+           align-items: center;
+           gap: 10px;
+        }
+
+          .logo-img {
+         width: 50px;
+        height: auto;
+        object-fit: contain;
+         }
 
         .testimonial blockquote {
             font-size: 18px;
@@ -638,10 +650,10 @@
                     <br><br>
                     Мы полностью перешли на работу с герметиком МаксиПласт-136, так как он лучше всего себя показал на практике. Начиная с нанесения, заканчивая гарантийными случаями — мы полностью доверяем этому продукту."
                 </blockquote>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        
-                        <p>Компания "ТатСтройДом"</p>
+                <div class="testimonial-author"
+                       <div class="company-logo">
+                       <img src="logo-tatstroydom.png" alt="ТатСтройДом" class="logo-img"> 
+                        <span>Компания "ТатСтройДом"</span>
                     </div>
                 </div>
                 <div class="stats-grid">
